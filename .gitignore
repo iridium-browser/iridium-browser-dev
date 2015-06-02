@@ -1,0 +1,5 @@
+/build/
+/src/
+/_gclient_*
+/.gclient*
+/depot_tools
