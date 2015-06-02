@@ -10,7 +10,7 @@ We simply use a clone of the iridium-browser-dev repository as our base
 for developing Iridium. 
 
 ```bash
-git clone git@github.com:iridium-browser/iridium-browser-dev.git
+git clone https://github.com/iridium-browser/iridium-browser-dev.git
 ```
 
 ## Google depot tools
