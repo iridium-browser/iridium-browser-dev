@@ -3,14 +3,25 @@
 See also https://code.google.com/p/chromium/wiki/LinuxBuildInstructions and
 https://code.google.com/p/chromium/wiki/LinuxFasterBuilds
 
+
+## Clone iridium-browser-dev
+
+We simply use a clone of the iridium-browser-dev repository as our base
+for developing Iridium. 
+
+```bash
+git clone git@github.com:iridium-browser/iridium-browser-dev.git
+```
+
 ## Google depot tools
 
 Make sure to have the [depot tools](https://chromium.googlesource.com/chromium/tools/depot_tools.git) from Google in your path. 
 
 ## Configure Iridium development
 
-Create some folder which you will be using as tree base for your Iridium
-development. `mkdir iridium-browser-dev` and change into that folder.
+We need a base folder for your Iridium development. You can simply use the
+`iridium-browser-dev` folder from above. For all the following commands,
+make sure you are in that folder.
 
 ```bash
 gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser" --deps-file=.DEPS.git
@@ -18,6 +29,7 @@ gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser
 
 This creates the .gclient configuration so that you can use the depot tools
 with Iridium.
+
 
 ## Sync Iridium source
 
@@ -80,8 +92,9 @@ CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox" src/out/Release/chrom
 ## Develop 
 
 Make your changes and rebuild. To pull in new changes, go to the `src `
-directory and run `git pull` (switch to a branch first) and after that run
-`gclient sync` to make sure third party stuff is updated too.
+directory and run `git pull` (switch to a branch) and after that run
+`gclient sync` in your base folder again, to make sure third party stuff is
+updated.
 
 In general development for Iridium is the same as for Chromium. So if you
 are familiar with that you are ready to go.
