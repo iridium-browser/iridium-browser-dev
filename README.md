@@ -73,7 +73,7 @@ ninja -C src/out/Release chrome chrome_sandbox
 
 ## Install sandbox
 
-To run Iridium, the sandbox needs to be set up. On Linux, see [here](https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment) for details. Installing the sandboxrequires 
+To run Iridium, the sandbox needs to be set up. On Linux, see [here](https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment) for details. Installing the sandbox requires 
 sudo permission on your machine.
 
 ```bash
@@ -83,7 +83,7 @@ BUILDTYPE=Release src/build/update-linux-sandbox.sh
 ## Start it
 
 Whenever we start Iridium, it needs to know the location of the sandbox. It
-is provided by environment variable. You can add this to your .bashrc too.
+is provided by environment variable. You can add this to your `.bashrc` too.
 
 ```bash
 CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox" src/out/Release/chrome
