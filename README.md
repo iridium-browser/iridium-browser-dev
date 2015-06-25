@@ -24,7 +24,7 @@ We need a base folder for your Iridium development. You can simply use the
 make sure you are in that folder.
 
 ```bash
-gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser" --deps-file=.DEPS.git
+gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser"
 ```
 
 This creates the .gclient configuration so that you can use the depot tools
