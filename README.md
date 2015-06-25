@@ -27,7 +27,7 @@ make sure you are in that folder.
 gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser"
 ```
 
-This creates the .gclient configuration so that you can use the depot tools
+This creates the `.gclient` configuration so that you can use the depot tools
 with Iridium.
 
 
@@ -100,6 +100,4 @@ In general development for Iridium is the same as for Chromium. So if you
 are familiar with that you are ready to go.
 
 Iridium is rebased on Chromium upstream branches. So to update your local
-tree you need to pull in changes with -f. 
-
-
+tree you need to pull in changes with `-f`.
