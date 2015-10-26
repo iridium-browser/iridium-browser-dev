@@ -86,7 +86,7 @@ Whenever we start Iridium, it needs to know the location of the sandbox. It
 is provided by environment variable. You can add this to your `.bashrc` too.
 
 ```bash
-CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox" src/out/Release/chrome
+CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox src/out/Release/chrome
 ```
 
 ## Develop 
@@ -99,6 +99,13 @@ updated.
 In general development for Iridium is the same as for Chromium. So if you
 are familiar with that you are ready to go.
 
+
+## Use temporary profile
+
+Sometimes it is useful to use a temporary profile.
+```bash
+CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox src/out/Release/chrome --user-data-dir=/tmp/iridium-temp-profile
+```
 
 ## Updating
 
