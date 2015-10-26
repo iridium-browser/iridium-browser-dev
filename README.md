@@ -115,6 +115,7 @@ running gclient.
 
 ```bash
 cd src
+git fetch
 git reset --hard origin/master
 cd ..
 gclient sync --with_branch_heads --nohooks
