@@ -6,7 +6,7 @@ https://code.google.com/p/chromium/wiki/LinuxFasterBuilds
 
 ## Clone iridium-browser-dev
 
-We simply use a clone of the iridium-browser-dev repository as our base
+We use a clone of the iridium-browser-dev repository as our base
 for developing Iridium.
 
 ```bash
@@ -19,7 +19,7 @@ Make sure to have the [depot tools](https://chromium.googlesource.com/chromium/t
 
 ## Configure Iridium development
 
-We need a base directory for your Iridium development. You can simply use the
+We need a base directory for your Iridium development. You can use the
 `iridium-browser-dev` directory from above. For all the following commands,
 make sure you are in that directory.
 
