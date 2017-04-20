@@ -19,9 +19,9 @@ Make sure to have the [depot tools](https://chromium.googlesource.com/chromium/t
 
 ## Configure Iridium development
 
-We need a base folder for your Iridium development. You can simply use the
-`iridium-browser-dev` folder from above. For all the following commands,
-make sure you are in that folder.
+We need a base directory for your Iridium development. You can simply use the
+`iridium-browser-dev` directory from above. For all the following commands,
+make sure you are in that directory.
 
 ```bash
 gclient config --name=src "git+https://git.iridiumbrowser.de/git/iridium-browser"
@@ -93,7 +93,7 @@ CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox src/out/Release/chrome
 
 Make your changes and rebuild. To pull in new changes, go to the `src `
 directory and run `git pull` (switch to a branch) and after that run
-`gclient sync` in your base folder again, to make sure third party stuff is
+`gclient sync` in your base directory again, to make sure third party stuff is
 updated.
 
 In general development for Iridium is the same as for Chromium. So if you
@@ -110,7 +110,7 @@ CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox src/out/Release/chrome
 ## Updating
 
 Iridum source master branch is constantly rebased on Chromium upstream. Thus
-to update you need to reset the `src` folder hard to `origin/master` before
+to update you need to reset the `src` directory hard to `origin/master` before
 running gclient.
 
 ```bash
