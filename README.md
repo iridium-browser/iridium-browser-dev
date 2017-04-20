@@ -79,6 +79,8 @@ to be prepared. This happens by running the gclient hooks.
 gclient runhooks
 ```
 
+(This downloads toolchains and buildroots from google…)
+
 ## Build
 
 You are now ready to build. Ninja is managing the build process. It will
