@@ -41,15 +41,34 @@ disk space available to do Iridium development.
 gclient sync --with_branch_heads --nohooks
 ```
 
+This creates a new directory called `src`.
+
+
 ## Install build dependencies
 
-Building requires various packages installed on your system. To simplify
-installation, a script is available. Of course, you can grab these manually
-as well; just check the script to see what is required.
+Building requires various packages installed on your system.
 
-```bash
-./src/build/install-build-deps.sh
-```
+`bison brlapi-devel curl dejavu-fonts elfutils ffmpeg-devel flex gcc-c++
+git-core git-svn gperf krb5-devel lksctp-tools-devel lsb-release
+mozilla-nspr-devel mozilla-nss-devel openbox pam-devel patch perl
+perl-libwww-perl pkg-config pkgconfig(alsa) pkgconfig(atk) pkgconfig(bluez)
+pkgconfig(gconf-2.0) pkgconfig(gl) pkgconfig(glib-2.0)
+pkgconfig(gnome-keyring-1) pkgconfig(gtk+-2.0) pkgconfig(gtk+-3.0)
+pkgconfig(libavcodec) pkgconfig(libavdevice) pkgconfig(libavfilter)
+pkgconfig(libavformat) pkgconfig(libavresample) pkgconfig(libavutil)
+pkgconfig(libdrm) pkgconfig(libelf) pkgconfig(libffi) pkgconfig(libpci)
+pkgconfig(libpostproc) pkgconfig(libpulse) pkgconfig(libswresample)
+pkgconfig(libswscale) pkgconfig(libxslt) pkgconfig(openssl)
+pkgconfig(pulseaudio) pkgconfig(speech-dispatcher) pkgconfig(sqlite3)
+pkgconfig(udev) pkgconfig(xkbcommon) pkgconfig(xscrnsaver) pkgconfig(xt)
+pkgconfig(xtst) python python-crypto python-devel python-numpy python-opencv
+python-openssl python-psutil python-yaml python3-CherryPy rpm ruby subversion
+wdiff xcompmgr zip` (+`texlive-ipa-fonts` maybe)
+
+There is an installation helper script (`src/build/install-build-deps.sh`), but
+its scope is very limited and only works for x86/x86_64 systems that use both
+apt-get and the Debian package names.
+
 
 ## Prepare building
 
