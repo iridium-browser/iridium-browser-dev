@@ -50,7 +50,7 @@ Building requires various packages installed on your system.
 
 `bison brlapi-devel curl dejavu-fonts elfutils ffmpeg-devel flex gcc-c++
 git-core git-svn gperf krb5-devel lksctp-tools-devel lsb-release
-mozilla-nspr-devel mozilla-nss-devel openbox pam-devel patch perl
+mozilla-nspr-devel mozilla-nss-devel nodejs openbox pam-devel patch perl
 perl-libwww-perl pkg-config pkgconfig(alsa) pkgconfig(atk) pkgconfig(bluez)
 pkgconfig(gconf-2.0) pkgconfig(gl) pkgconfig(glib-2.0)
 pkgconfig(gnome-keyring-1) pkgconfig(gtk+-2.0) pkgconfig(gtk+-3.0)
@@ -79,7 +79,14 @@ to be prepared. This happens by running the gclient hooks.
 gclient runhooks
 ```
 
-(This downloads toolchains and buildroots from google…)
+(This downloads toolchains and buildroots from google and this will be
+deactivated soon enough…)
+
+A symlink may need to be set for nodejs if DEPS did not specify a download for
+node.
+
+    src/third_party/node/linux/node-linux-x64/bin/node -> /usr/bin/node
+
 
 ## Build
 
