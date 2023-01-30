@@ -1,4 +1,4 @@
-https://github.com/iridium-browser/iridium-browser/blob/master/README.md
+https://github.com/iridium-browser/iridium-browser/blob/master/README.rst
 
 As for installing dependencies, you may be able to ask the package manager to
 install the BuildRequires from any repository package (chromium, or
